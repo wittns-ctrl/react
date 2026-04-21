@@ -10,7 +10,10 @@ function App() {
           'london',
           'paris'
       ]
-  return <div>< ListGroup items={items} heading="cities"/></div>
+      const handleSelectedItem = (item: string) => {
+        console.log(item)
+      }
+  return <div>< ListGroup items={items} heading="cities" onSelectItem={handleSelectedItem}/></div>
 }
 
 export default App
