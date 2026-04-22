@@ -1,14 +1,13 @@
+import UserCard from "./components/UserCard"
 
 function App() {
-
-
-
-  return <div >
-<button className="btn btn-primary">
-  "click me"
-</button>
-
-  </div>
+  return <div>
+<UserCard  
+ username="DevUser"
+isAdmin={true}
+onLogout={()=> console.log("logged out")}
+/>
+</div>
 }
 
 export default App
