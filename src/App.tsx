@@ -1,11 +1,14 @@
-import Alert from "./components/Alert"
-
 
 function App() {
 
 
 
-  return <div ><Alert> <span>Hello world</span></Alert></div>
+  return <div >
+<button className="btn btn-primary">
+  "click me"
+</button>
+
+  </div>
 }
 
 export default App
